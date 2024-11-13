@@ -147,6 +147,11 @@ class MHZ19:
         command[4] = span % 256
         self._write_command(command)
 
+    @property
+    def autocalibration(self) -> None:
+        """ autocalibration value (not implemented) """
+        return None
+
     @autocalibration.setter
     def autocalibration(self, state: bool):
         """
